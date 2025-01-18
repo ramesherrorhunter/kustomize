@@ -1,0 +1,16 @@
+resources:
+  - Deployment.yml
+  - Service.yml
+
+commonLabels:
+  app: shipping-app
+
+commonAnnotations:
+  description: "Deployment for shipping-app"
+
+namePrefix: 
+  shipping-
+
+configMapGenerator:
+- name: configmap
+  env: configmap.properties
