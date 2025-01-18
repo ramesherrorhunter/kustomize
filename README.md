@@ -1,14 +1,14 @@
 # kustomize
 kustomize the k8s manifest file.
 
-## set alias
+## set alias for long running commands
 `alias k="kubectl kustomize"`
 
-## cd base
+## cd to base dir
 `cd base`
 
-## run kustomize to vire k8s manidest file (alreay set alias)
+## run kustomize to view k8s manidest file (already set alias)
 `k .`
 
-## to apply kustomization run
+## to apply manifest kustomization run
 `kubectl apply -k kustomization.yml`
